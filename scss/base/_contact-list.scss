@@ -1,10 +1,10 @@
 .contact-list {
   margin: 2rem 0;
-  background-color: $color-dark;
+  background-color: $color-dark-L;
   border-radius: 2rem;
   transition: all 0.5s;
   &:hover{
-    background-color: lighten($color: $color-dark, $amount: 5);
+    background-color: lighten($color: $color-dark-L, $amount: 5);
   }
 }
 .contact-list-item {
@@ -16,6 +16,9 @@
     transition: all 0.5s;
     &:hover{
       background-color: $color-light;
+      img {
+        @extend %filter-violet;
+      }
     }
   }
   &__icon {

@@ -1,3 +1,21 @@
-    .education-list-item {
+    .education__list-item {
       padding: 0.5rem 0;
+    }
+
+    .link_underlined {
+      position: relative;
+    &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: $color-dark-XL;
+    transition: 0.3s;
+  }
+  &:hover::before {
+    width: 100%;
+    left: 0;
+  }
     }

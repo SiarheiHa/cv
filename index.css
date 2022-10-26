@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600&display=swap");
+.project__link-git:hover, .contact-list-item a:hover img {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(68%) saturate(3349%) hue-rotate(228deg) brightness(128%) contrast(127%);
+}
+
 *,
 *::before,
 *::after {
@@ -32,6 +36,23 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-color: #c0c0c0;
+  border-radius: 2rem;
+  transition: all 0.5s;
+}
+.nav-list:hover {
+  background-color: #cdcdcd;
+}
+
+.nav-link {
+  display: block;
+  padding: 2rem;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  background-color: #edeaea;
 }
 
 .person-info {
@@ -43,6 +64,7 @@ body {
 .person-info__photo {
   display: block;
   border-radius: 1rem;
+  filter: grayscale(0.3);
 }
 
 .person-info__name {
@@ -57,6 +79,12 @@ body {
   text-transform: uppercase;
 }
 
+@media print {
+  .person-info__photo {
+    width: 20rem;
+    height: 20rem;
+  }
+}
 .contact-list {
   margin: 2rem 0;
   background-color: #c0c0c0;
@@ -109,8 +137,7 @@ body {
   text-decoration: underline;
   font-weight: 600;
 }
-
-.skill-item {
+.skills-list_hard .skill-item {
   min-width: 15rem;
   display: flex;
   flex-direction: column;
@@ -118,12 +145,39 @@ body {
   margin: 1rem 0.4rem;
 }
 
+@media print {
+  .skills-list_hard {
+    justify-content: start;
+  }
+  .skills-list_hard .skill-item {
+    min-width: 5rem;
+    width: 8rem;
+  }
+}
 .skill-name {
   text-align: center;
 }
 
-.education-list-item {
+.education__list-item {
   padding: 0.5rem 0;
+}
+
+.link_underlined {
+  position: relative;
+}
+.link_underlined::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  transition: 0.3s;
+}
+.link_underlined:hover::before {
+  width: 100%;
+  left: 0;
 }
 
 .project {
@@ -144,8 +198,23 @@ body {
 
 .project__link-git {
   margin-top: auto;
+  transition: all 0.3s;
+}
+.project__description_stack {
+  font-style: italic;
 }
 
+@media print {
+  .project {
+    padding: 0;
+  }
+  .project__image {
+    display: none;
+  }
+  .project__link-git {
+    display: none;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -156,12 +225,18 @@ header {
 }
 
 .header-nav {
-  padding: 2rem;
+  padding-top: 2rem;
+  margin: 0 2rem;
   display: flex;
   align-items: center;
   height: 100%;
 }
 
+@media print {
+  .header-nav {
+    display: none;
+  }
+}
 main {
   display: flex;
 }
@@ -190,9 +265,27 @@ main {
   text-align: justify;
 }
 
+@media print {
+  main {
+    flex-direction: column;
+  }
+  .info-block {
+    padding: 0;
+    margin: 0;
+  }
+}
 .aside {
   padding: 2rem;
   width: 33rem;
+}
+
+@media print {
+  .aside {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

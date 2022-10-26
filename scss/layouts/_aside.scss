@@ -2,3 +2,12 @@
   padding: 2rem;
   width: 33rem;
 }
+
+@media print {
+  .aside {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

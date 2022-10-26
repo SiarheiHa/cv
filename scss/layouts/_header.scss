@@ -1,10 +1,18 @@
 header {
-  background-color: $color-dark;
+  background-color: $color-dark-L;
 }
 
 .header-nav {
-  padding: 2rem;
+  padding-top: 2rem;
+  margin: 0 2rem;
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+
+@media print {
+    .header-nav  {
+    display: none;
+  }
 }

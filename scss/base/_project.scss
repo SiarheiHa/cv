@@ -16,4 +16,24 @@
 
 .project__link-git {
   margin-top: auto;
+  transition: all 0.3s;
+    &:hover{
+    @extend %filter-violet
+  }
+}
+
+.project__description_stack {
+  font-style: italic;
+}
+
+@media print {
+  .project {
+    padding: 0;
+  }
+    .project__image {
+    display: none;
+  }
+  .project__link-git {
+    display: none;
+  }
 }

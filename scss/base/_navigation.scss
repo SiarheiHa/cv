@@ -3,8 +3,21 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-color: $color-dark-L;
+  border-radius: 2rem;
+  transition: all 0.5s;
+    &:hover{
+    background-color: lighten($color: $color-dark-L, $amount: 5);
+  }
 }
-.nav-item {
-}
+
 .nav-link {
+  display: block;
+  padding: 2rem;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  text-transform: uppercase;
+    &:hover{
+      background-color: $color-light;
+    }
 }
