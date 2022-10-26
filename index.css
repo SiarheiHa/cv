@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  background-color: #c0c0c0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-info__photo {
+  display: block;
+  border-radius: 1rem;
+}
+
+.person-info__name {
+  padding: 1rem 0 0.5rem 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.person-info__profession {
+  padding: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.contact-list {
+  margin: 2rem 0;
+  background-color: #c0c0c0;
+  border-radius: 2rem;
+  transition: all 0.5s;
+}
+.contact-list:hover {
+  background-color: #cdcdcd;
+}
+
+.contact-list-item a {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  display: flex;
+  transition: all 0.5s;
+}
+.contact-list-item a:hover {
+  background-color: #edeaea;
+}
+.contact-list-item__icon span {
+  font-size: 4rem;
+}
+.contact-list-item__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.contact-list-item__info {
+  font-weight: 600;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.skills-list:last-child {
+  padding-bottom: 0;
+}
+.skills-list_soft {
+  display: block;
+}
+.skills-list_soft .skill-item {
+  display: block;
+}
+.skills-list_soft .skill-item h4 {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.skill-item {
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0.4rem;
+}
+
+.skill-name {
+  text-align: center;
+}
+
+.education-list-item {
+  padding: 0.5rem 0;
+}
+
+.project {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.project__image {
+  border-radius: 1rem;
+}
+
+.project__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+
+.project__link-git {
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #c0c0c0;
+}
+
+.header-nav {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+main {
+  display: flex;
+}
+
+.info-block {
+  background-color: #edeaea;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.info-block .section {
+  padding-bottom: 2rem;
+}
+.info-block .section .section-title {
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.info-block .section h3 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.info-block .section p {
+  line-height: 200%;
+  text-align: justify;
+}
+
+.aside {
+  padding: 2rem;
+  width: 33rem;
+}
+
+/*# sourceMappingURL=index.css.map */

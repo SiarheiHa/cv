@@ -1,0 +1,19 @@
+.project {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.project__image{
+  border-radius: 1rem;
+}
+
+.project__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+
+.project__link-git {
+  margin-top: auto;
+}

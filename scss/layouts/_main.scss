@@ -1,0 +1,28 @@
+main {
+  display: flex;
+}
+
+.info-block {
+  background-color: $color-light;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  .section {
+    padding-bottom: 2rem;
+    .section-title {
+      padding-bottom: 1.5rem;
+      font-weight: 400;
+      text-transform: uppercase; 
+    }
+    h3 {
+      padding-bottom: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    p {
+      line-height: 200%;
+      text-align: justify;
+    }
+  }
+  
+}

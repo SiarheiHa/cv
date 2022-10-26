@@ -1,0 +1,35 @@
+.contact-list {
+  margin: 2rem 0;
+  background-color: $color-dark;
+  border-radius: 2rem;
+  transition: all 0.5s;
+  &:hover{
+    background-color: lighten($color: $color-dark, $amount: 5);
+  }
+}
+.contact-list-item {
+  a {
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: inherit;
+    display: flex;
+    transition: all 0.5s;
+    &:hover{
+      background-color: $color-light;
+    }
+  }
+  &__icon {
+    span {
+      font-size: 4rem;
+    }
+  }
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+ }
+  &__info {
+    font-weight: 600;
+  }
+}
