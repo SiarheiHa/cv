@@ -1,24 +1,16 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 
-// @import "base/typography";
 @import "base/normalize";
 @import "base/base";
 @import "base/navigation";
 @import "base/person";
-@import "base/_contact-list.scss";
-@import "base/_skills.scss";
-@import "base/_education.scss";
-@import "base/_project.scss";
-// @import "base/nav-item";
-// @import "base/rslogo";
+@import "base/contact-list";
+@import "base/skills";
+@import "base/education";
+@import "base/project";
 
 @import "layouts/container";
 @import "layouts/header";
-@import "layouts/_main.scss";
-@import "layouts/_aside.scss";
-// @import "layouts/info";
-// @import "layouts/profile";
-// @import "layouts/skills";
-// @import "layouts/projects";
-// @import "layouts/footer";
+@import "layouts/main";
+@import "layouts/aside";

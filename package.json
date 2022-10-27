@@ -5,17 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "sass --watch scss/style.scss index.css",
-    "lint": "stylelint \"**/*.css\" --fix"
+    "style": "sass --watch scss/style.scss index.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.49.8",
-    "stylelint": "^14.14.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^29.0.0",
-    "stylelint-config-standard-scss": "^5.0.0",
-    "stylelint-scss": "^4.3.0"
+    "sass": "^1.49.8"
   }
 }
