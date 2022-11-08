@@ -1,6 +1,15 @@
 .aside {
   padding: 2rem;
   width: 33rem;
+  .section {
+    margin: 0 auto;
+  }
+  @include media-tablet {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 @media print {

@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   background-color: $color-dark-L;
   border-radius: 2rem;
   transition: all 0.5s;
-    &:hover{
+  &:hover {
     background-color: lighten($color: $color-dark-L, $amount: 5);
   }
 }
@@ -17,7 +18,13 @@
   transition: all 0.5s;
   border-radius: 2rem;
   text-transform: uppercase;
-    &:hover{
-      background-color: $color-light;
-    }
+  &:hover {
+    background-color: $color-light;
+  }
+  @include media-tablet {
+    padding: 1rem;
+  }
+  @include media-mobile {
+    padding: 0.5rem;
+  }
 }

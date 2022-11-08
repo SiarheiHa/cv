@@ -1,9 +1,14 @@
 .project {
   display: flex;
   padding: 2rem 0;
+  @include media-mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
 }
 
-.project__image{
+.project__image {
   border-radius: 1rem;
 }
 
@@ -12,13 +17,20 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0 2rem;
+  width: 100%;
+  .project__link-git {
+    margin-left: auto;
+  }
+  @include media-mobile {
+    margin-top: 0.5rem;
+  }
 }
 
 .project__link-git {
   margin-top: auto;
   transition: all 0.3s;
-    &:hover{
-    @extend %filter-violet
+  &:hover {
+    @extend %filter-violet;
   }
 }
 
@@ -30,7 +42,7 @@
   .project {
     padding: 0;
   }
-    .project__image {
+  .project__image {
     display: none;
   }
   .project__link-git {
