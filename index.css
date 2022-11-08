@@ -24,11 +24,25 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
+@media print {
+  html {
+    font-size: 8px;
+  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   background-color: #c0c0c0;
+}
+
+.print {
+  display: none;
+}
+@media print {
+  .print {
+    display: block;
+  }
 }
 
 .nav-list {
@@ -70,6 +84,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media print {
+  .person-info {
+    margin-top: 2.5rem;
+  }
 }
 
 .person-info__photo {
@@ -158,7 +177,7 @@ body {
 
 @media print {
   .skills-list_hard {
-    justify-content: start;
+    justify-content: space-between;
   }
   .skills-list_hard .skill-item {
     min-width: 5rem;
@@ -167,6 +186,9 @@ body {
 }
 .skill-name {
   text-align: center;
+}
+.skill-name span {
+  display: block;
 }
 
 .education__list-item {
@@ -222,6 +244,11 @@ body {
     margin-top: 0.5rem;
   }
 }
+@media print {
+  .project__description-wrapper {
+    margin-top: 1rem;
+  }
+}
 
 .project__link-git {
   margin-top: auto;
@@ -257,6 +284,13 @@ header {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+.header-title {
+  margin: 0 auto;
+}
+.header-title a {
+  font-weight: 400;
 }
 
 @media print {

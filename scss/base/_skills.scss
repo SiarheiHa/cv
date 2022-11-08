@@ -3,20 +3,20 @@
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 2rem;
-  &:last-child{
+  &:last-child {
     padding-bottom: 0;
   }
-  &_soft{
+  &_soft {
     display: block;
     .skill-item {
       display: block;
       h4 {
-      text-decoration: underline;
-      font-weight: 600;
+        text-decoration: underline;
+        font-weight: 600;
       }
     }
   }
-  &_hard{
+  &_hard {
     .skill-item {
       min-width: 15rem;
       display: flex;
@@ -27,17 +27,19 @@
   }
 }
 
-
 @media print {
   .skills-list_hard {
-    justify-content: start;
+    justify-content: space-between;
     .skill-item {
-        min-width: 5rem;
-        width: 8rem;
-      }
+      min-width: 5rem;
+      width: 8rem;
+    }
   }
 }
 
 .skill-name {
   text-align: center;
+  span {
+    display: block;
+  }
 }

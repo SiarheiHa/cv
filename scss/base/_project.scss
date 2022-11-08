@@ -24,6 +24,9 @@
   @include media-mobile {
     margin-top: 0.5rem;
   }
+  @include media-print {
+    margin-top: 1rem;
+  }
 }
 
 .project__link-git {

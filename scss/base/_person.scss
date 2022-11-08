@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include media-print {
+    margin-top: 2.5rem;
+  }
 }
 .person-info__photo {
   display: block;
@@ -16,11 +19,11 @@
 .person-info__profession {
   padding: 0;
   font-size: 2rem;
-  text-transform:uppercase
+  text-transform: uppercase;
 }
 
 @media print {
-  .person-info__photo {    
+  .person-info__photo {
     width: 20rem;
     height: 20rem;
   }

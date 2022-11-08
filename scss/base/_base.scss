@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600&display=swap");
 
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  @include media-print {
+    font-size: 8px;
+  }
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   background-color: $color-dark-L;
+}
+
+.print {
+  display: none;
+  @include media-print {
+    display: block;
+  }
 }
