@@ -1,7 +1,7 @@
 .project {
   display: flex;
   padding: 2rem 0;
-  @include media-mobile {
+  @include media-mobile-XL {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
@@ -21,7 +21,7 @@
   .project__link-git {
     margin-left: auto;
   }
-  @include media-mobile {
+  @include media-mobile-XL {
     margin-top: 0.5rem;
   }
   @include media-print {

@@ -149,9 +149,6 @@ body {
 }
 
 .skills-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   padding-bottom: 2rem;
 }
 .skills-list:last-child {
@@ -167,21 +164,34 @@ body {
   text-decoration: underline;
   font-weight: 600;
 }
+.skills-list_hard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 1000px) {
+  .skills-list_hard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 680px) {
+  .skills-list_hard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 460px) {
+  .skills-list_hard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .skills-list_hard .skill-item {
-  min-width: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0.4rem;
 }
 
 @media print {
   .skills-list_hard {
-    justify-content: space-between;
-  }
-  .skills-list_hard .skill-item {
-    min-width: 5rem;
-    width: 8rem;
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 .skill-name {
