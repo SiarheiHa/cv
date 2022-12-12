@@ -3,8 +3,11 @@
   background-color: $color-dark-L;
   border-radius: 2rem;
   transition: all 0.5s;
-  &:hover{
+  &:hover {
     background-color: lighten($color: $color-dark-L, $amount: 5);
+  }
+  @include media-print {
+    margin: 0 0;
   }
 }
 .contact-list-item {
@@ -14,7 +17,7 @@
     background-color: inherit;
     display: flex;
     transition: all 0.5s;
-    &:hover{
+    &:hover {
       background-color: $color-light;
       img {
         @extend %filter-violet;
@@ -31,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 1rem;
- }
+  }
   &__info {
     font-weight: 600;
   }

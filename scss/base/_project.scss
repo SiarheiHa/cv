@@ -1,3 +1,17 @@
+.project-list {
+  li {
+    @include media-mobile-XL {
+      margin-top: 0.5rem;
+    }
+    @include media-print {
+      margin-top: 1rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .project {
   display: flex;
   padding: 2rem 0;
@@ -20,12 +34,6 @@
   width: 100%;
   .project__link-git {
     margin-left: auto;
-  }
-  @include media-mobile-XL {
-    margin-top: 0.5rem;
-  }
-  @include media-print {
-    margin-top: 1rem;
   }
 }
 

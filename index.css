@@ -124,6 +124,11 @@ body {
 .contact-list:hover {
   background-color: #cdcdcd;
 }
+@media print {
+  .contact-list {
+    margin: 0 0;
+  }
+}
 
 .contact-list-item a {
   border-radius: 2rem;
@@ -146,6 +151,10 @@ body {
 }
 .contact-list-item__info {
   font-weight: 600;
+}
+
+.skill-wrapper h3 {
+  padding-bottom: 1rem;
 }
 
 .skills-list {
@@ -223,6 +232,20 @@ body {
   left: 0;
 }
 
+@media (max-width: 680px) {
+  .project-list li {
+    margin-top: 0.5rem;
+  }
+}
+@media print {
+  .project-list li {
+    margin-top: 1rem;
+  }
+  .project-list li:first-child {
+    margin-top: 0;
+  }
+}
+
 .project {
   display: flex;
   padding: 2rem 0;
@@ -248,16 +271,6 @@ body {
 }
 .project__description-wrapper .project__link-git {
   margin-left: auto;
-}
-@media (max-width: 680px) {
-  .project__description-wrapper {
-    margin-top: 0.5rem;
-  }
-}
-@media print {
-  .project__description-wrapper {
-    margin-top: 1rem;
-  }
 }
 
 .project__link-git {
@@ -332,7 +345,6 @@ main {
   text-transform: uppercase;
 }
 .info-block .section h3 {
-  padding-bottom: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
