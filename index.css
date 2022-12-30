@@ -67,7 +67,7 @@ body {
   text-transform: uppercase;
 }
 .nav-link__icon {
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .nav-link:hover {
   background-color: #edeaea;
