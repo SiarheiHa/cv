@@ -18,6 +18,9 @@
   transition: all 0.5s;
   border-radius: 2rem;
   text-transform: uppercase;
+  &__icon {
+    padding: 1rem;
+  }
   &:hover {
     background-color: $color-light;
   }
