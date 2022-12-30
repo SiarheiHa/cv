@@ -140,6 +140,9 @@ body {
 .contact-list-item a:hover {
   background-color: #edeaea;
 }
+.contact-list-item__icon {
+  display: flex;
+}
 .contact-list-item__icon span {
   font-size: 4rem;
 }
