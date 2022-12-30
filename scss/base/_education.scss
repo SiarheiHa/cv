@@ -1,10 +1,14 @@
-    .education__list-item {
-      padding: 0.5rem 0;
-    }
+.education__list-item {
+  padding-bottom: 0.5rem;
+  // padding: 0.5rem 0;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
 
-    .link_underlined {
-      position: relative;
-    &::before {
+.link_underlined {
+  position: relative;
+  &::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -18,4 +22,4 @@
     width: 100%;
     left: 0;
   }
-    }
+}

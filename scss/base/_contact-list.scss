@@ -23,6 +23,9 @@
         @extend %filter-violet;
       }
     }
+    @include media-print {
+      padding: 0.3rem 1rem;
+    }
   }
   &__icon {
     display: flex;

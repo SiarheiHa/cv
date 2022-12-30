@@ -22,6 +22,7 @@
   &_hard {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    row-gap: 1rem;
     @include media-tablet {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -42,12 +43,17 @@
 @media print {
   .skills-list_hard {
     grid-template-columns: repeat(6, 1fr);
+    row-gap: 0;
+  }
+  .skill-image {
+    width: 4rem;
+    height: 4rem;
   }
 }
 
 .skill-name {
   text-align: center;
-  span {
-    display: block;
-  }
+  // span {
+  //   display: block;
+  // }
 }

@@ -87,7 +87,7 @@ body {
 }
 @media print {
   .person-info {
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -140,6 +140,11 @@ body {
 .contact-list-item a:hover {
   background-color: #edeaea;
 }
+@media print {
+  .contact-list-item a {
+    padding: 0.3rem 1rem;
+  }
+}
 .contact-list-item__icon {
   display: flex;
 }
@@ -179,6 +184,7 @@ body {
 .skills-list_hard {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  row-gap: 1rem;
 }
 @media (max-width: 1000px) {
   .skills-list_hard {
@@ -204,17 +210,22 @@ body {
 @media print {
   .skills-list_hard {
     grid-template-columns: repeat(6, 1fr);
+    row-gap: 0;
+  }
+  .skill-image {
+    width: 4rem;
+    height: 4rem;
   }
 }
 .skill-name {
   text-align: center;
 }
-.skill-name span {
-  display: block;
-}
 
 .education__list-item {
-  padding: 0.5rem 0;
+  padding-bottom: 0.5rem;
+}
+.education__list-item:last-child {
+  padding-bottom: 0;
 }
 
 .link_underlined {
@@ -235,6 +246,13 @@ body {
   left: 0;
 }
 
+.experience-list-item {
+  padding-bottom: 0.5rem;
+}
+.experience-list-item:last-child {
+  padding-bottom: 0;
+}
+
 @media (max-width: 680px) {
   .project-list li {
     margin-top: 0.5rem;
@@ -242,10 +260,7 @@ body {
 }
 @media print {
   .project-list li {
-    margin-top: 1rem;
-  }
-  .project-list li:first-child {
-    margin-top: 0;
+    display: none;
   }
 }
 
@@ -342,6 +357,9 @@ main {
 .info-block .section {
   padding-bottom: 2rem;
 }
+.info-block .section:last-child {
+  padding-bottom: 0;
+}
 .info-block .section .section-title {
   padding-bottom: 1.5rem;
   font-weight: 400;
@@ -350,6 +368,14 @@ main {
 .info-block .section h3 {
   font-weight: 600;
   text-transform: uppercase;
+}
+.info-block .section h4 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.info-block .section h4 a {
+  font-weight: inherit;
+  text-decoration: underline;
 }
 .info-block .section p {
   line-height: 200%;
@@ -363,6 +389,13 @@ main {
   .info-block {
     padding: 0;
     margin: 0;
+  }
+  .info-block .section {
+    padding-bottom: 1rem;
+  }
+  .info-block .section > .section-title {
+    padding-bottom: 0.3rem;
+    font-size: 2.2rem;
   }
 }
 .aside {
@@ -384,6 +417,7 @@ main {
 @media print {
   .aside {
     padding: 0;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     width: 100%;

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   @include media-print {
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
   }
 }
 .person-info__photo {
